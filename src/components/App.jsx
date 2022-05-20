@@ -1,16 +1,15 @@
+import {Component} from 'react';
+import Section from './Section/Section';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="wrapper">
+    <Section title="Please leave feedback">
+
+    </Section>
+    <Section title="Statistics">
+
+    </Section>
     </div>
   );
 };
