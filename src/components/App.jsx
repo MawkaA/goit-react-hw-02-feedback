@@ -43,13 +43,13 @@ class App extends Component {
 
     return (
       <>
-        <Section title="Please leave feedback">
+        <Section title="Please leave feedback: ">
           <FeedbackOptions
             onLeaveFeedback={this.handleFeedbackChanger}
             options={options}
           />
         </Section>
-        <Section title="Statistics">
+        <Section title="Statistics :">
           {((good || bad || neutral) && (
             <Statistics
               good={good}
@@ -58,7 +58,7 @@ class App extends Component {
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
-          )) || <Notification message="No feedback given" />}
+          )) || <Notification message="There is no feedback" />}
         </Section>
       </>
     );
